@@ -1,0 +1,149 @@
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+     Title = "Tycoon And Simulator", 
+     Style = 1,
+     SizeX = 500, -- Size in X
+     SizeY = 300,  -- Size in Y
+     Theme = "Dark"
+})
+
+-- pages.
+
+local Page = UI.New({
+    Title = "Tycoon" 
+})
+
+local Page2 = UI.New({
+    Title = "Simulator" 
+})
+
+local Page3 = UI.New({
+    Title = "Misc" 
+})
+
+-- Scripts
+
+Page.Button({
+    Text = "Clone Tycoon",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconLords/Random-Shit/main/Clone%20Tycoon%20Super%20Op"))()
+        
+    end
+})
+
+Page.Button({
+    Text = "Mall Tycoon",
+    Callback = function()
+        loadstring(game:HttpGet("http://void-scripts.com/RIP/MallTycoon.lua"))()
+    end
+})
+
+Page.Button({
+    Text = "museum tycoon",
+    Callback = function()
+        loadstring(game:HttpGet('https://rentry.co/uypm8/raw'))()
+    end
+})
+
+Page.Button({
+    Text = "mep",
+    Callback = function()
+        game:GetService("ReplicatedStorage").RespawnService:FireServer(9e17)
+    end
+})
+
+Page.Button({
+    Text = "ninja tycoon",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/scripts/main/NinjaTycoonGui.lua", true))()
+    end
+})
+
+Page.Button({
+    Text = "My Restaurant ",
+    Callback = function()
+        loadstring(game:HttpGet("http://void-scripts.com/Scripts/myRest.lua"))()
+    end
+})
+
+-- simulator
+
+Page2.Button({
+    Text = "pet simulator x",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
+    end
+})
+
+Page2.Button({
+    Text = "saber simulator ",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
+    end
+})
+
+Page2.Button({
+    Text = "boxing simulator",
+    Callback = function()
+        loadstring(game:HttpGet("http://void-scripts.com/RIP/BoxingSimulator.lua"))()
+    end
+})
+
+Page2.Button({
+    Text = "broke bones simulator",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/pattingbabies/blora/main/bbs"))()
+    end
+})
+
+Page2.Button({
+    Text = "cat simulator ",
+    Callback = function()
+        loadstring(game:HttpGet("http://void-scripts.com/RIP/CatSimulator.lua"))()
+    end
+})
+
+Page2.Button({
+    Text = "flight simulator",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/F4hbv2iT"))()
+    end
+})
+
+Page2.Button({
+    Text = "Fishing Simulator",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/DrpdsK8a"))()
+    end
+})
+
+Page2.Button({
+    Text = "Mining simulator",
+    Callback = function()
+        pcall(loadstring(game:HttpGet("https://pastebin.com/raw/MZiQYFPc")))
+    end
+})
+
+Page3.Button({
+    Text = "Made By yA#6260",
+    Callback = function()
+        
+    end
+})
+
+Page3.Button({
+    Text = "Anti Afk",
+    Callback = function()
+    pcall(loadstring(game:HttpGet("https://pastebin.com/raw/dnwYtGCQ")))
+        
+    end
+})
+
+Page3.Button({
+    Text = "Discord Coming VERY SOON",
+    Callback = function()
+    
+        
+    end
+})
